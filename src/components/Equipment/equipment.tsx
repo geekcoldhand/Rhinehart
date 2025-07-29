@@ -16,7 +16,7 @@ export default function Equipment() {
           <div className={styles.equipmentCard}>
             <div className={styles.imageContainer}>
               <Image
-                src="/placeholder.svg?height=300&width=400"
+                src="/Excavator.png?height=300&width=400"
                 alt="Excavators"
                 width={400}
                 height={300}
@@ -35,7 +35,7 @@ export default function Equipment() {
           <div className={styles.equipmentCard}>
             <div className={styles.imageContainer}>
               <Image
-                src="/placeholder.svg?height=300&width=400"
+                src="/mower.png?height=300&width=400"
                 alt="Bulldozers"
                 width={400}
                 height={300}
@@ -43,9 +43,9 @@ export default function Equipment() {
               />
             </div>
             <div className={styles.cardContent}>
-              <h3 className={styles.cardTitle}>Bulldozers</h3>
+              <h3 className={styles.cardTitle}>Mowers</h3>
               <p className={styles.cardDescription}>
-                Powerful bulldozers for earthmoving, grading, and heavy construction applications.
+                Powerful speeds for comercial grade lawns, and heavy landscaping applications.
               </p>
               <button className={styles.cardButton}>View Bulldozers</button>
             </div>
@@ -54,7 +54,7 @@ export default function Equipment() {
           <div className={styles.equipmentCard}>
             <div className={styles.imageContainer}>
               <Image
-                src="/placeholder.svg?height=300&width=400"
+                src="/RTV.png?height=300&width=400"
                 alt="Loaders"
                 width={400}
                 height={300}
@@ -62,7 +62,7 @@ export default function Equipment() {
               />
             </div>
             <div className={styles.cardContent}>
-              <h3 className={styles.cardTitle}>Loaders</h3>
+              <h3 className={styles.cardTitle}>RTV</h3>
               <p className={styles.cardDescription}>
                 Versatile wheel and track loaders for material handling and construction tasks.
               </p>
