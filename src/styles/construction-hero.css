@@ -2,14 +2,12 @@
 .hero-card {
   width: 100%;
   max-width: 64rem;
-  background-color: #f3f4f6;
-  border-radius: 1.5rem;
+  background-color: var(--rhinehart-white);
+
   padding: 2rem;
   position: relative;
   overflow: hidden;
-  box-shadow:
-    20px 20px 40px rgba(0, 0, 0, 0.1), -20px -20px 40px rgba(0, 0, 0, 0.1),
-    inset 2px 2px 4px rgba(0, 0, 0, 0.1), inset -2px -2px 4px rgba(0, 0, 0, 0.1);
+ 
 }
 
 .hero-content {
@@ -42,6 +40,15 @@
   font-style: italic;
 }
 
+.hero-image {
+  object-fit: contain;
+  position: relative;
+  z-index: 10;
+  filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.15));
+  width: 300px;
+  height: auto;
+  padding-right: 6vw;
+}
 .hero-image-section {
   display: flex;
   justify-content: center;
@@ -49,11 +56,9 @@
   width: 100%;
   
 }
-
 .hero-image-container {
   position: relative;
 }
-
 .hero-image-shadow {
   position: absolute;
   bottom: 0;
@@ -67,16 +72,6 @@
   filter: blur(0.875rem);
 }
 
-.hero-image {
-  object-fit: contain;
-  position: relative;
-  z-index: 10;
-  filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.15));
-  width: 300px;
-  height: auto;
-  padding-right: 6vw;
-}
-
 .hero-description {
   color: var(--rhinehart-gray);
   line-height: 1.625;
@@ -87,7 +82,7 @@
 }
 
 .hero-button {
-  background-color: #f3f4f6;
+  background-color: var(--rhinehart-white) ;
   color: var(--rhinehart-orange);
   border: none;
   padding: 0.75rem 1.5rem;
