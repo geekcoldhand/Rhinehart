@@ -41,7 +41,17 @@
 		padding: 0.75rem 1.5rem;
 	}
 }
-
+.mobileMenu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    padding: .5rem;
+    height: 14rem;;
+}
 .mobileMenuButton {
 	background: none;
 	border: none;
@@ -181,11 +191,20 @@
 }
 
 .mobileNavLink {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
 	font-size: 1.125rem;
 	font-weight: 500;
 	color: white;
 	text-decoration: none;
 	transition: color 0.2s ease;
+}
+.mobileNavLink a {
+    color: var(--rhinehart-gray);
+    text-decoration: none;
 }
 
 .mobileNavLink:hover {

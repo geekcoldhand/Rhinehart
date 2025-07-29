@@ -21,17 +21,17 @@ export default function TopNavigation() {
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
 	
-	useEffect(() => {
-		if (isMobileMenuOpen) {
-			document.body.style.overflow = "hidden";
-		} else {
-			document.body.style.overflow = "unset";
-		}
+	// useEffect(() => {
+	// 	if (isMobileMenuOpen) {
+	// 		document.body.style.overflow = "hidden";
+	// 	} else {
+	// 		document.body.style.overflow = "unset";
+	// 	}
 
-		return () => {
-			document.body.style.overflow = "unset";
-		};
-	}, [isMobileMenuOpen]);
+	// 	return () => {
+	// 		document.body.style.overflow = "unset";
+	// 	};
+	// }, [isMobileMenuOpen]);
 
 	return (
 		<>
@@ -54,10 +54,25 @@ export default function TopNavigation() {
 					{/* Mobile Menu */}
 					<button
 						className={styles.mobileMenuButton}
-						onClick={() => setIsMobileMenuOpen(true)}
+						onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
 					>
 						<Menu size={24} />
 					</button>
+
+					{isMobileMenuOpen && (
+						<div className={styles.mobileMenu}>
+							
+							<nav className={styles.mobileNavLink}>
+								<a href="#equipment">Equipment</a>
+								<a href="#services">Services</a>
+								<a href="#parts">Parts</a>
+								<a href="#support">Support</a>
+								<a href="#about">About</a>
+								<a href="#contact">Contact</a>
+								<a href="/login">Login</a>
+							</nav>
+						</div>
+					)}
 
 					{/* Logo */}
 					<div>
