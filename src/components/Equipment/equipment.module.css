@@ -1,0 +1,123 @@
+.equipmentSection {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+@media (min-width: 1024px) {
+  .equipmentSection {
+    padding: 6rem 0;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: var(--rhinehart-black);
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 2.25rem;
+  }
+}
+
+.subtitle {
+  color: var(--rhinehart-gray);
+  font-size: 1.125rem;
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.equipmentGrid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .equipmentGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .equipmentGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.equipmentCard {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.equipmentCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.equipmentImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.equipmentCard:hover .equipmentImage {
+  transform: scale(1.05);
+}
+
+.cardContent {
+  padding: 1.5rem;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--rhinehart-black);
+  margin-bottom: 0.5rem;
+}
+
+.cardDescription {
+  color: var(--rhinehart-gray);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.cardButton {
+  background-color: var(--rhinehart-orange);
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-weight: 500;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+.cardButton:hover {
+  background-color: rgba(255, 54, 0, 0.9);
+}

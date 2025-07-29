@@ -10,22 +10,34 @@ import styles from "./nav.module.css";
 export default function TopNavigation() {
 	const [isSearchOpen, setIsSearchOpen] = useState(false);
 	const [isScrolled, setIsScrolled] = useState(false);
+	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
 	useEffect(() => {
 		const handleScroll = () => {
 			const scrollPosition = window.scrollY;
 			setIsScrolled(scrollPosition > 100);
 		};
-
 		window.addEventListener("scroll", handleScroll);
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
+	
+	useEffect(() => {
+		if (isMobileMenuOpen) {
+			document.body.style.overflow = "hidden";
+		} else {
+			document.body.style.overflow = "unset";
+		}
+
+		return () => {
+			document.body.style.overflow = "unset";
+		};
+	}, [isMobileMenuOpen]);
 
 	return (
 		<>
 			{/* Announcement Bar */}
 			<div className={styles.announcementBar}>
-				New 2024 Excavator Models Now Available - Limited Time Financing Options
+				New 2024 Excavator Models Now Available
 			</div>
 
 			{/* Sticky Navigation */}
@@ -40,13 +52,15 @@ export default function TopNavigation() {
 			>
 				<div className={styles.navContainer}>
 					{/* Mobile Menu */}
-					<button className={styles.mobileMenuButton}>
-						<Menu />
-						<span className="sr-only">Toggle menu</span>
+					<button
+						className={styles.mobileMenuButton}
+						onClick={() => setIsMobileMenuOpen(true)}
+					>
+						<Menu size={24} />
 					</button>
 
 					{/* Logo */}
-					<div >
+					<div>
 						<Image src={logo} alt="" className={styles.logo} />
 					</div>
 

@@ -45,7 +45,7 @@
 .mobileMenuButton {
 	background: none;
 	border: none;
-	color: white;
+	color: var(--rhinehart-gray);
 	padding: 0.5rem;
 	cursor: pointer;
 	border-radius: 0.25rem;
