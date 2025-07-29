@@ -15,8 +15,8 @@ export default function Partners() {
         <div className={styles.partnersGrid}>
           <div className={styles.partnerLogo}>
             <Image
-              src="/placeholder.svg?height=80&width=120"
-              alt="Caterpillar"
+              src="/kubota_logo.png?height=80&width=120"
+              alt="Kubota"
               width={120}
               height={80}
               className={styles.logoImage}
@@ -24,8 +24,8 @@ export default function Partners() {
           </div>
           <div className={styles.partnerLogo}>
             <Image
-              src="/placeholder.svg?height=80&width=120"
-              alt="Komatsu"
+              src="/bobcat_logo.png?height=80&width=120"
+              alt="Bobcat"
               width={120}
               height={80}
               className={styles.logoImage}
@@ -33,14 +33,14 @@ export default function Partners() {
           </div>
           <div className={styles.partnerLogo}>
             <Image
-              src="/placeholder.svg?height=80&width=120"
-              alt="Volvo"
+              src="/exmark_logo.png?height=80&width=120"
+              alt="Exmark"
               width={120}
               height={80}
               className={styles.logoImage}
             />
           </div>
-          <div className={styles.partnerLogo}>
+          {/* <div className={styles.partnerLogo}>
             <Image
               src="/placeholder.svg?height=80&width=120"
               alt="John Deere"
@@ -48,7 +48,7 @@ export default function Partners() {
               height={80}
               className={styles.logoImage}
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

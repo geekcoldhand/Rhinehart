@@ -8,7 +8,7 @@ export default function Footer() {
           <div className={styles.brandSection}>
             <div className={styles.brandName}>RHINEHART</div>
             <p className={styles.brandDescription}>
-              Your trusted partner for premium construction equipment and exceptional service.
+              Your trusted partner for premium construction & argucultural equipment with exceptional service.
             </p>
           </div>
           <div className={styles.footerColumn}>
@@ -64,15 +64,15 @@ export default function Footer() {
           <div className={styles.footerColumn}>
             <h3 className={styles.columnTitle}>Contact</h3>
             <ul className={styles.contactList}>
-              <li>(555) 123-4567</li>
-              <li>info@rhinehart.com</li>
-              <li>123 Industrial Blvd</li>
-              <li>Construction City, ST 12345</li>
+              <li>(706) 232-8962</li>
+              <li>sales@rhinehartequipment.com</li>
+              <li>13556 Martha Berry Hwy</li>
+              <li>Rome, GA 30165</li>
             </ul>
           </div>
         </div>
         <div className={styles.footerBottom}>
-          <p>&copy; 2024 Rhinehart Construction Equipment. All rights reserved.</p>
+          <p>&copy; 2025 Rhinehart Equipment. All rights reserved.</p>
         </div>
       </div>
     </footer>

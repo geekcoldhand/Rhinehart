@@ -1,97 +1,97 @@
 .servicesSection {
-  padding: 4rem 0;
-  background-color: rgb(249, 250, 251);
+	padding: 4rem 0;
+	background-color: rgb(249, 250, 251);
 }
 
 @media (min-width: 1024px) {
-  .servicesSection {
-    padding: 6rem 0;
-  }
+	.servicesSection {
+		padding: 6rem 0;
+	}
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 1rem;
 }
 
 .header {
-  text-align: center;
-  margin-bottom: 3rem;
+	text-align: center;
+	margin-bottom: 3rem;
 }
 
 .title {
-  font-size: 1.875rem;
-  font-weight: bold;
-  color: var(--rhinehart-black);
-  margin-bottom: 1rem;
+	font-size: 1.875rem;
+	font-weight: bold;
+	color: var(--rhinehart-black);
+	margin-bottom: 1rem;
 }
 
 @media (min-width: 1024px) {
-  .title {
-    font-size: 2.25rem;
-  }
+	.title {
+		font-size: 2.25rem;
+	}
 }
 
 .subtitle {
-  color: var(--rhinehart-gray);
-  font-size: 1.125rem;
-  max-width: 32rem;
-  margin: 0 auto;
+	color: var(--rhinehart-gray);
+	font-size: 1.125rem;
+	max-width: 32rem;
+	margin: 0 auto;
 }
 
 .servicesGrid {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: 1fr;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
 }
 
 @media (min-width: 768px) {
-  .servicesGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+	.servicesGrid {
+		flex-direction: row;
+	}
 }
 
 @media (min-width: 1024px) {
-  .servicesGrid {
-    grid-template-columns: repeat(4, 1fr);
-  }
+	.servicesGrid {
+		flex-direction: row;
+	}
 }
 
 .serviceCard {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 0.5rem;
-  text-align: center;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+	background-color: white;
+	padding: 2rem;
+	border-radius: 0.5rem;
+	text-align: center;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .serviceCard:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+	transform: translateY(-4px);
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .iconContainer {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1rem;
 }
 
 .serviceIcon {
-  width: 3rem;
-  height: 3rem;
-  color: var(--rhinehart-orange);
+	width: 3rem;
+	height: 3rem;
+	color: var(--rhinehart-orange);
 }
 
 .serviceTitle {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: var(--rhinehart-black);
-  margin-bottom: 1rem;
+	font-size: 1.25rem;
+	font-weight: bold;
+	color: var(--rhinehart-black);
+	margin-bottom: 1rem;
 }
 
 .serviceDescription {
-  color: var(--rhinehart-gray);
-  line-height: 1.5;
+	color: var(--rhinehart-gray);
+	line-height: 1.5;
 }

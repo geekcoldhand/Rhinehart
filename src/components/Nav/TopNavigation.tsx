@@ -12,6 +12,10 @@ export default function TopNavigation() {
 	const [isScrolled, setIsScrolled] = useState(false);
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+	const handleLinkClick = () => {
+		setIsMobileMenuOpen(false);
+	};
+
 	useEffect(() => {
 		const handleScroll = () => {
 			const scrollPosition = window.scrollY;
@@ -20,7 +24,7 @@ export default function TopNavigation() {
 		window.addEventListener("scroll", handleScroll);
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
-	
+
 	// useEffect(() => {
 	// 	if (isMobileMenuOpen) {
 	// 		document.body.style.overflow = "hidden";
@@ -61,15 +65,28 @@ export default function TopNavigation() {
 
 					{isMobileMenuOpen && (
 						<div className={styles.mobileMenu}>
-							
 							<nav className={styles.mobileNavLink}>
-								<a href="#equipment">Equipment</a>
-								<a href="#services">Services</a>
-								<a href="#parts">Parts</a>
-								<a href="#support">Support</a>
-								<a href="#about">About</a>
-								<a href="#contact">Contact</a>
-								<a href="/login">Login</a>
+								<a href="#equipment" onClick={handleLinkClick}>
+									Equipment
+								</a>
+								<a href="#services" onClick={handleLinkClick}>
+									Services
+								</a>
+								<a href="#parts" onClick={handleLinkClick}>
+									Parts
+								</a>
+								<a href="#support" onClick={handleLinkClick}>
+									Support
+								</a>
+								<a href="#about" onClick={handleLinkClick}>
+									About
+								</a>
+								<a href="#contact" onClick={handleLinkClick}>
+									Contact
+								</a>
+								<a href="/login" onClick={handleLinkClick}>
+									Login
+								</a>
 							</nav>
 						</div>
 					)}

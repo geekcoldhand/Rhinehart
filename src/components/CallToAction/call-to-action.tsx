@@ -10,7 +10,7 @@ export default function CTA() {
         </p>
         <div className={styles.buttonGroup}>
           <button className={styles.primaryButton}>Get Free Quote</button>
-          <button className={styles.secondaryButton}>Call (555) 123-4567</button>
+          <button className={styles.secondaryButton}>Call (706) 232-8962</button>
         </div>
       </div>
     </section>

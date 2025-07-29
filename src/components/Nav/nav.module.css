@@ -1,6 +1,6 @@
 .announcementBar {
-	background-color: var(--rhinehart-orange);
-	color: white;
+	background-color: var(--rhinehart-white);
+	color: var(--rhinehart-orange);
 	text-align: center;
 	padding: 0.5rem 1rem;
 	font-size: 0.875rem;

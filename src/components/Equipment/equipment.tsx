@@ -8,7 +8,7 @@ export default function Equipment() {
         <div className={styles.header}>
           <h2 className={styles.title}>Our Equipment</h2>
           <p className={styles.subtitle}>
-            Discover our comprehensive range of construction equipment designed to meet every project need.
+            Discover our comprehensive range of agrucultural & construction equipment designed to meet every project need.
           </p>
         </div>
 
